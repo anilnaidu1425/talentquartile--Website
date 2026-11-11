@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Partners | TalentQuartile LLP</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17365d;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.logo { width: 370px; max-width: 100%; }
+
+nav a {
+    text-decoration: none;
+    color: #17365d;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(110deg, #103d70, #0879d8);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 { font-size: 48px; }
+
+section { padding: 65px 8%; text-align: center; }
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    padding: 30px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000010;
+}
+
+.card h3 { color: #0879d8; margin-bottom: 12px; }
+
+.partner-form { background: #f3f7fc; }
+
+form { max-width: 650px; margin: 30px auto; text-align: left; }
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0 18px;
+    border: 1px solid #ccd5e0;
+    border-radius: 5px;
+}
+
+button {
+    background: #0879d8;
+    color: white;
+    padding: 14px 30px;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #102f52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:768px) {
+    header { justify-content: center; gap: 15px; }
+    nav { text-align: center; }
+    nav a { display: inline-block; margin: 6px; }
+    .hero h1 { font-size: 35px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="Talent%20Quartile%20Logo.png" class="logo" alt="TalentQuartile Logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Grow Together With TalentQuartile</h1>
+<p>Building Strong Business Partnerships Through Talent and Technology</p>
+</div>
+
+<section>
+<h2>Partner With Us</h2>
+<p>TalentQuartile LLP welcomes organisations and professionals who want to build long-term business relationships and deliver exceptional results.</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Recruitment Partners</h3>
+<p>Collaborate with us to fulfil IT and non-IT recruitment requirements across industries.</p>
+</div>
+
+<div class="card">
+<h3>RPO Partners</h3>
+<p>Work with our recruitment teams to deliver scalable and efficient talent acquisition solutions.</p>
+</div>
+
+<div class="card">
+<h3>Staffing Partners</h3>
+<p>Collaborate on staffing requirements and help businesses access qualified professionals.</p>
+</div>
+
+<div class="card">
+<h3>Technology Partners</h3>
+<p>Join us in delivering IT services and technology solutions to growing businesses.</p>
+</div>
+
+</div>
+</section>
+
+<section class="partner-form">
+<h2>Become Our Partner</h2>
+<p>Share your organisation details. Our team will get in touch.</p>
+
+<form>
+<label>Company Name</label>
+<input type="text" placeholder="Enter company name" required>
+
+<label>Contact Person</label>
+<input type="text" placeholder="Enter contact person name" required>
+
+<label>Business Email</label>
+<input type="email" placeholder="Enter business email" required>
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter mobile number" required>
+
+<label>Partnership Type</label>
+<select required>
+<option value="">Select partnership type</option>
+<option>Recruitment Partner</option>
+<option>RPO Partner</option>
+<option>Staffing Partner</option>
+<option>Technology Partner</option>
+<option>Other</option>
+</select>
+
+<label>Company Website</label>
+<input type="url" placeholder="https://">
+
+<label>Message</label>
+<textarea rows="4" placeholder="Tell us about your organisation"></textarea>
+
+<button type="button" disabled>Registration Coming Soon</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+<p>Recruitment | RPO | IT Services</p>
+</footer>
+
+</body>
+</html>

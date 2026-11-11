@@ -146,46 +146,40 @@ Shirisha@Talentquartile.com</a></p>
 <div class="contact-form">
 <h2>Send Us An Enquiry</h2>
 
-<form>
-<label>Full Name</label>
-<input type="text" placeholder="Your Name" required>
 
-<label>Company Name</label>
-<input type="text" placeholder="Your Company">
+<form action="https://formsubmit.co/HR@talentquartile.com" method="POST">
 
-<label>Email Address</label>
-<input type="email" placeholder="Your Email" required>
+    <input type="hidden" name="_subject" value="New Website Enquiry - TalentQuartile">
+    <input type="hidden" name="_template" value="table">
 
-<label>Phone Number</label>
-<input type="tel" placeholder="Your Phone Number" required>
+    <input type="text" name="_honey" style="display:none">
 
-<label>Service Interested In</label>
-<select name="service" required>
-<option value="">Select a Service</option>
-<option>IT Recruitment</option>
-<option>Non-IT Recruitment</option>
-<option>RPO Services</option>
-<option>IT Services</option>
-<option>Staffing</option>
-<option>Other</option>
-</select>
+    <label>Full Name</label>
+    <input type="text" name="name" placeholder="Your Name" required>
 
-<label>Message</label>
-<textarea rows="5" placeholder="How can we help you?" required></textarea>
+    <label>Company Name</label>
+    <input type="text" name="company" placeholder="Your Company">
 
-<button type="button" disabled>Enquiry Form Coming Soon</button>
+    <label>Email Address</label>
+    <input type="email" name="email" placeholder="Your Email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" placeholder="Your Phone Number" required>
+
+    <label>Service Interested In</label>
+    <select name="service" required>
+        <option value="">Select a Service</option>
+        <option>IT Recruitment</option>
+        <option>Non-IT Recruitment</option>
+        <option>RPO Services</option>
+        <option>IT Services</option>
+        <option>Staffing</option>
+        <option>Other</option>
+    </select>
+
+    <label>Message</label>
+    <textarea name="message" rows="5" placeholder="How can we help you?" required></textarea>
+
+    <button type="submit">Submit Enquiry</button>
+
 </form>
-</div>
-
-</div>
-</section>
-
-<footer>
-<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
-<p>Recruitment | RPO | IT Services</p>
-<p>Madhapur, Hyderabad, India</p>
-</footer>
-
-</body>
-</html>
-

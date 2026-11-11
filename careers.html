@@ -195,37 +195,60 @@ Join our growing team and build your future with us.</p>
 <h2>Submit Your Application</h2>
 <p>Interested in joining us? Share your details with our recruitment team.</p>
 
-<form>
-<label>Full Name</label>
-<input type="text" placeholder="Enter your full name" required>
 
-<label>Email Address</label>
-<input type="email" placeholder="Enter your email" required>
+<form action="https://formsubmit.co/info@talentquartile.com"
+      method="POST"
+      enctype="multipart/form-data">
 
-<label>Mobile Number</label>
-<input type="tel" placeholder="Enter your mobile number" required>
+  <input type="hidden" name="_subject"
+         value="New Job Application - TalentQuartile">
+  <input type="hidden" name="_template" value="table">
 
-<label>Position Applying For</label>
-<select required>
-<option value="">Select Position</option>
-<option>IT Recruiter</option>
-<option>Senior IT Recruiter</option>
-<option>HR Recruiter</option>
-<option>Other</option>
-</select>
+  <!-- Spam protection -->
+  <input type="text" name="_honey"
+         style="display:none">
 
-<label>Total Experience</label>
-<input type="text" placeholder="Example: 3 Years">
+  <label>Full Name</label>
+  <input type="text" name="name"
+         placeholder="Enter your full name" required>
 
-<label>LinkedIn Profile</label>
-<input type="url" placeholder="LinkedIn profile URL">
+  <label>Email Address</label>
+  <input type="email" name="email"
+         placeholder="Enter your email" required>
 
-<label>Message</label>
-<textarea rows="4" placeholder="Tell us about yourself"></textarea>
+  <label>Mobile Number</label>
+  <input type="tel" name="mobile"
+         placeholder="Enter your mobile number" required>
 
-<p>Resume submission and application delivery will be enabled after we connect the form to a submission service.</p>
-<button type="button" disabled>Application Form Coming Soon</button>
+  <label>Position Applying For</label>
+  <select name="position" required>
+    <option value="">Select a Position</option>
+    <option>IT Recruiter</option>
+    <option>Senior IT Recruiter</option>
+    <option>HR Recruiter</option>
+    <option>Other</option>
+  </select>
+
+  <label>Total Experience</label>
+  <input type="text" name="experience"
+         placeholder="Example: 3 Years" required>
+
+  <label>LinkedIn Profile</label>
+  <input type="url" name="linkedin"
+         placeholder="LinkedIn profile URL">
+
+  <label>Upload Resume (PDF or Word)</label>
+  <input type="file" name="attachment"
+         accept=".pdf,.doc,.docx" required>
+
+  <label>Message</label>
+  <textarea name="message" rows="4"
+            placeholder="Tell us about yourself"></textarea>
+
+  <button type="submit">Submit Application</button>
+
 </form>
+
 </section>
 
 <footer>

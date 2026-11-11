@@ -1,1 +1,191 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | TalentQuartile LLP</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17365d;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: white;
+}
+
+.logo { width: 370px; max-width: 100%; }
+
+nav a {
+    text-decoration: none;
+    color: #17365d;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(110deg, #103d70, #0879d8);
+    color: white;
+    text-align: center;
+    padding: 85px 20px;
+}
+
+.hero h1 { font-size: 48px; }
+
+section { padding: 60px 8%; }
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+}
+
+.contact-info, .contact-form {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000012;
+}
+
+h2, h3 { margin-bottom: 20px; }
+
+.contact-info p { margin-bottom: 18px; }
+
+.contact-info a {
+    color: #0879d8;
+    text-decoration: none;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0 18px;
+    border: 1px solid #ccd5e0;
+    border-radius: 5px;
+}
+
+button {
+    background: #0879d8;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #102f52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width:768px) {
+    header { justify-content: center; gap: 15px; }
+    nav { text-align: center; }
+    nav a { display: inline-block; margin: 6px; }
+    .hero h1 { font-size: 35px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="Talent%20Quartile%20Logo.png" class="logo" alt="TalentQuartile Logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Contact Us</h1>
+<p>Let's Connect and Build Successful Partnerships Together</p>
+</div>
+
+<section>
+<div class="contact-container">
+
+<div class="contact-info">
+<h2>Get In Touch</h2>
+
+<h3>TalentQuartile LLP</h3>
+
+<p><b>Our Services</b><br>
+Recruitment | RPO | IT Services</p>
+
+<p><b>Office Location</b><br>
+Madhapur, Hyderabad, Telangana, India</p>
+
+<p><b>Contact Person</b><br>
+Sirisha</p>
+
+<p><b>Phone</b><br>
+<a href="tel:+919491268021">+91 94912 68021</a></p>
+
+<p><b>Email</b><br>
+<a href="mailto:Shirisha@Talentquartile.com">
+Shirisha@Talentquartile.com</a></p>
+
+</div>
+
+<div class="contact-form">
+<h2>Send Us An Enquiry</h2>
+
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Your Name" required>
+
+<label>Company Name</label>
+<input type="text" placeholder="Your Company">
+
+<label>Email Address</label>
+<input type="email" placeholder="Your Email" required>
+
+<label>Phone Number</label>
+<input type="tel" placeholder="Your Phone Number" required>
+
+<label>Service Interested In</label>
+<select name="service" required>
+<option value="">Select a Service</option>
+<option>IT Recruitment</option>
+<option>Non-IT Recruitment</option>
+<option>RPO Services</option>
+<option>IT Services</option>
+<option>Staffing</option>
+<option>Other</option>
+</select>
+
+<label>Message</label>
+<textarea rows="5" placeholder="How can we help you?" required></textarea>
+
+<button type="button" disabled>Enquiry Form Coming Soon</button>
+</form>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+<p>Recruitment | RPO | IT Services</p>
+<p>Madhapur, Hyderabad, India</p>
+</footer>
+
+</body>
+</html>
+

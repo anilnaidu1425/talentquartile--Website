@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Careers | TalentQuartile LLP</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #17365d;
+    line-height: 1.7;
+}
+
+header {
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 370px;
+    max-width: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #17365d;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(110deg, #103d70, #0879d8);
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.hero h1 {
+    font-size: 52px;
+}
+
+section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.job-card {
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px #00000015;
+    text-align: left;
+    border: 1px solid #e5eaf0;
+}
+
+.job-card h3 {
+    color: #0879d8;
+    margin-bottom: 12px;
+}
+
+.apply {
+    display: inline-block;
+    background: #0879d8;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 18px;
+}
+
+.application {
+    background: #f3f7fc;
+}
+
+form {
+    max-width: 650px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    margin: 10px 0 18px;
+    border: 1px solid #ccd5e0;
+    border-radius: 5px;
+}
+
+button {
+    background: #0879d8;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background: #102f52;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 768px) {
+    header {
+        justify-content: center;
+        gap: 15px;
+    }
+    nav {
+        text-align: center;
+    }
+    nav a {
+        display: inline-block;
+        margin: 6px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="Talent%20Quartile%20Logo.png"
+     alt="TalentQuartile Logo" class="logo">
+
+<nav>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+<a href="partners.html">Partners</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="hero">
+<h1>Build Your Career With Us</h1>
+<p>Discover opportunities. Develop your skills. Grow with TalentQuartile.</p>
+</div>
+
+<section>
+<h2>Why Join TalentQuartile?</h2>
+<p>At TalentQuartile LLP, we believe people are the foundation of success.
+Join our growing team and build your future with us.</p>
+
+<div class="jobs">
+
+<div class="job-card">
+<h3>IT Recruiter</h3>
+<p><b>Experience:</b> 1–4 Years</p>
+<p><b>Skills:</b> IT Recruitment, Sourcing, Screening and Candidate Management.</p>
+<a class="apply" href="#application">Apply Now</a>
+</div>
+
+<div class="job-card">
+<h3>Senior IT Recruiter</h3>
+<p><b>Experience:</b> 4–7 Years</p>
+<p><b>Skills:</b> Technical Hiring, Client Coordination and End-to-End Recruitment.</p>
+<a class="apply" href="#application">Apply Now</a>
+</div>
+
+<div class="job-card">
+<h3>HR Recruiter</h3>
+<p><b>Experience:</b> 0–2 Years</p>
+<p><b>Skills:</b> Communication, Candidate Sourcing and Interview Coordination.</p>
+<a class="apply" href="#application">Apply Now</a>
+</div>
+
+</div>
+</section>
+
+<section class="application" id="application">
+<h2>Submit Your Application</h2>
+<p>Interested in joining us? Share your details with our recruitment team.</p>
+
+<form>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your full name" required>
+
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+
+<label>Mobile Number</label>
+<input type="tel" placeholder="Enter your mobile number" required>
+
+<label>Position Applying For</label>
+<select required>
+<option value="">Select Position</option>
+<option>IT Recruiter</option>
+<option>Senior IT Recruiter</option>
+<option>HR Recruiter</option>
+<option>Other</option>
+</select>
+
+<label>Total Experience</label>
+<input type="text" placeholder="Example: 3 Years">
+
+<label>LinkedIn Profile</label>
+<input type="url" placeholder="LinkedIn profile URL">
+
+<label>Message</label>
+<textarea rows="4" placeholder="Tell us about yourself"></textarea>
+
+<p>Resume submission and application delivery will be enabled after we connect the form to a submission service.</p>
+<button type="button" disabled>Application Form Coming Soon</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+<p>Recruitment | RPO | IT Services</p>
+</footer>
+
+</body>
+</html>

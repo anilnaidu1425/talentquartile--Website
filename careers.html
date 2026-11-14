@@ -5,136 +5,83 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Careers | TalentQuartile LLP</title>
+<meta name="description" content="Explore recruitment career opportunities with TalentQuartile LLP. Submit your profile and resume for consideration.">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10264a;line-height:1.7;background:#fff}
+a{text-decoration:none}
 
-body {
-    font-family: Arial, sans-serif;
-    color: #17365d;
-    line-height: 1.7;
-}
+header{min-height:108px;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:relative;z-index:2}
+.logo{flex:0 0 400px}
+.logo img{width:400px;max-width:100%;height:auto;display:block}
+nav{flex:1;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:nowrap}
+nav a{color:#10264a;font-weight:700;font-size:16px;white-space:nowrap}
+nav a:hover{color:#0878f9}
+nav .partner{background:#0878f9;color:white;padding:13px 18px;border-radius:6px}
 
-header {
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    flex-wrap: wrap;
-}
+.hero{background:#071d40;color:#fff;text-align:center;padding:75px 20px}
+.eyebrow{font-size:14px;letter-spacing:5px;font-weight:bold;color:#9dcaff;text-transform:uppercase}
+.hero h1{font-family:Georgia,serif;font-size:52px;line-height:1.15;margin:15px auto;max-width:900px}
+.hero p{font-size:19px;color:#e1eaf7;max-width:780px;margin:15px auto 0}
 
-.logo {
-    width: 370px;
-    max-width: 100%;
-}
+main{max-width:1200px;margin:auto;padding:65px 25px}
+.intro{text-align:center;max-width:850px;margin:0 auto 45px}
+.intro h2{font-family:Georgia,serif;font-size:36px;line-height:1.25;color:#09234b}
+.intro p{font-size:17px;color:#52647c}
 
-nav a {
-    text-decoration: none;
-    color: #17365d;
-    margin: 0 12px;
-    font-weight: bold;
-}
+.benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:35px 0 65px}
+.benefit{background:#f3f7fc;border-radius:12px;padding:25px;border:1px solid #e2eaf4}
+.benefit h3{color:#0878f9;margin:0 0 8px}
+.benefit p{color:#52647c;margin:0}
 
-.hero {
-    background: linear-gradient(110deg, #103d70, #0879d8);
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-}
+.application{display:grid;grid-template-columns:.85fr 1.4fr;gap:35px;align-items:start}
+.form-info{background:#071d40;color:white;padding:35px;border-radius:14px}
+.form-info h2{font-family:Georgia,serif;font-size:32px;line-height:1.2;margin-top:0}
+.form-info p{color:#dce8f8}
+.form-info li{margin:12px 0;color:#e1eaf7}
 
-.hero h1 {
-    font-size: 52px;
-}
+.form-card{border:1px solid #e2eaf4;border-radius:14px;padding:35px;box-shadow:0 8px 25px rgba(13,39,78,.07)}
+.form-card h2{font-family:Georgia,serif;font-size:30px;color:#09234b;margin:0 0 8px}
+.form-card>p{color:#62718a;margin-top:0;margin-bottom:25px}
 
-section {
-    padding: 65px 8%;
-    text-align: center;
-}
+label{display:block;font-weight:bold;color:#18345d;margin:16px 0 6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #cbd7e6;border-radius:6px;font:16px Arial,sans-serif;color:#10264a;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid #9dcaff;border-color:#0878f9}
+input[type=file]{background:#f5f8fc}
+textarea{resize:vertical;min-height:110px}
+.form-note{font-size:13px;color:#62718a;margin-top:7px}
+button{width:100%;border:0;background:#0878f9;color:#fff;padding:16px 22px;border-radius:6px;font-size:17px;font-weight:bold;cursor:pointer;margin-top:22px}
+button:hover{background:#0665d4}
 
-.jobs {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 35px;
-}
+.cta{text-align:center;background:#f3f7fc;padding:45px 25px;margin-top:65px;border-radius:14px}
+.cta h2{font-family:Georgia,serif;font-size:32px;color:#09234b;margin-top:0}
+.cta p{color:#52647c;max-width:700px;margin:0 auto 20px}
+.btn{display:inline-block;background:#0878f9;color:#fff;padding:14px 27px;border-radius:6px;font-weight:bold}
 
-.job-card {
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px #00000015;
-    text-align: left;
-    border: 1px solid #e5eaf0;
-}
+footer{background:#071d40;color:#fff;padding:42px 6% 22px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px;max-width:1200px;margin:auto}
+footer h3{color:#fff}
+footer p,footer a{color:#d3e1f4}
+footer a:hover{color:#fff}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.copyright{text-align:center;border-top:1px solid #294266;margin-top:30px;padding-top:18px;color:#b9cbe2;font-size:14px}
 
-.job-card h3 {
-    color: #0879d8;
-    margin-bottom: 12px;
+@media(max-width:1100px){
+header{flex-wrap:wrap;justify-content:center}
+.logo{flex:0 1 320px}
+.logo img{width:320px}
+nav{flex:1 1 100%;justify-content:center;flex-wrap:wrap}
 }
-
-.apply {
-    display: inline-block;
-    background: #0879d8;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 5px;
-    text-decoration: none;
-    margin-top: 18px;
-}
-
-.application {
-    background: #f3f7fc;
-}
-
-form {
-    max-width: 650px;
-    margin: 30px auto;
-    text-align: left;
-}
-
-input, select, textarea {
-    width: 100%;
-    padding: 13px;
-    margin: 10px 0 18px;
-    border: 1px solid #ccd5e0;
-    border-radius: 5px;
-}
-
-button {
-    background: #0879d8;
-    color: white;
-    padding: 14px 30px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background: #102f52;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-@media(max-width: 768px) {
-    header {
-        justify-content: center;
-        gap: 15px;
-    }
-    nav {
-        text-align: center;
-    }
-    nav a {
-        display: inline-block;
-        margin: 6px;
-    }
-    .hero h1 {
-        font-size: 36px;
-    }
+@media(max-width:700px){
+.hero{padding:60px 20px}
+.hero h1{font-size:36px}
+.intro h2{font-size:29px}
+.benefits,.application,.footer-grid{grid-template-columns:1fr}
+.form-card,.form-info{padding:25px}
+nav{gap:13px}
+nav a{font-size:14px}
+nav .partner{padding:10px 14px}
 }
 </style>
 </head>
@@ -142,121 +89,152 @@ footer {
 <body>
 
 <header>
-<img src="Talent%20Quartile%20Logo.png"
-     alt="TalentQuartile Logo" class="logo">
-
+<a class="logo" href="index.html">
+<img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
+</a>
 <nav>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="about.html">About Us</a>
 <a href="services.html">Services</a>
 <a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
+<a href="partners.html">Clients &amp; Partners</a>
 <a href="contact.html">Contact</a>
+<a class="partner" href="partners.html">Partner With Us ↗</a>
 </nav>
 </header>
 
-<div class="hero">
-<h1>Build Your Career With Us</h1>
-<p>Discover opportunities. Develop your skills. Grow with TalentQuartile.</p>
-    <a class="apply" href="#application">Send Your Resume</a>
+<section class="hero">
+<div class="eyebrow">CAREERS · OPPORTUNITIES · GROWTH</div>
+<h1>Build Your Career With TalentQuartile</h1>
+<p>Connect with recruitment opportunities and take the next step in your professional journey. Share your profile with our team for consideration.</p>
+</section>
+
+<main>
+
+<section class="intro">
+<div class="eyebrow" style="color:#0878f9">YOUR NEXT OPPORTUNITY</div>
+<h2>Let's Connect Your Talent With Opportunity</h2>
+<p>We welcome profiles from recruitment professionals and talent acquisition specialists interested in exploring suitable opportunities through TalentQuartile LLP.</p>
+</section>
+
+<section class="benefits">
+<div class="benefit">
+<h3>Recruitment Careers</h3>
+<p>Explore opportunities in IT recruitment, talent acquisition and recruitment delivery.</p>
 </div>
-
-<section>
-<h2>Why Join TalentQuartile?</h2>
-<p>At TalentQuartile LLP, we believe people are the foundation of success.
-Join our growing team and build your future with us.</p>
-
-<div class="jobs">
-
-<div class="job-card">
-<h3>IT Recruiter</h3>
-<p><b>Experience:</b> 1–4 Years</p>
-<p><b>Skills:</b> IT Recruitment, Sourcing, Screening and Candidate Management.</p>
-<a class="apply" href="#application">Apply Now</a>
+<div class="benefit">
+<h3>Professional Growth</h3>
+<p>Share your experience, areas of expertise and career interests with our team.</p>
 </div>
-
-<div class="job-card">
-<h3>Senior IT Recruiter</h3>
-<p><b>Experience:</b> 4–7 Years</p>
-<p><b>Skills:</b> Technical Hiring, Client Coordination and End-to-End Recruitment.</p>
-<a class="apply" href="#application">Apply Now</a>
-</div>
-
-<div class="job-card">
-<h3>HR Recruiter</h3>
-<p><b>Experience:</b> 0–2 Years</p>
-<p><b>Skills:</b> Communication, Candidate Sourcing and Interview Coordination.</p>
-<a class="apply" href="#application">Apply Now</a>
-</div>
-
+<div class="benefit">
+<h3>Stay Connected</h3>
+<p>Submit your profile so we can consider it for relevant opportunities as they arise.</p>
 </div>
 </section>
 
-<section class="application" id="application">
-<h2>Submit Your Application</h2>
-<p>Interested in joining us? Share your details with our recruitment team.</p>
+<section class="application">
 
+<div class="form-info">
+<div class="eyebrow">JOIN OUR TALENT NETWORK</div>
+<h2>Take the Next Step in Your Career</h2>
+<p>Interested in working in recruitment or talent acquisition? Send us your details and resume.</p>
+<ul>
+<li>IT Recruiter opportunities</li>
+<li>Senior IT Recruiter opportunities</li>
+<li>HR Recruiter opportunities</li>
+<li>Other relevant recruitment roles</li>
+</ul>
+<p>Our team can review your profile and contact you if a suitable opportunity is available.</p>
+</div>
+
+<div class="form-card">
+<h2>Submit Your Profile</h2>
+<p>Please complete the details below. Fields marked as required must be filled in.</p>
 
 <form action="https://formsubmit.co/info@talentquartile.com"
-      method="POST"
-      enctype="multipart/form-data">
+method="POST"
+enctype="multipart/form-data">
 
-  <input type="hidden" name="_subject"
-         value="New Job Application - TalentQuartile">
-  <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_next"
-value="https://anilnaidu1425.github.io/talentquartile--Website/thank-you.html">
+<input type="hidden" name="_subject" value="New Job Application - TalentQuartile">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://anilnaidu1425.github.io/talentquartile--Website/thank-you.html">
 
-  <!-- Spam protection -->
-  <input type="text" name="_honey"
-         style="display:none">
+<!-- Spam protection -->
+<input type="text" name="_honey" style="display:none">
 
-  <label>Full Name</label>
-  <input type="text" name="name"
-         placeholder="Enter your full name" required>
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter your full name" required>
 
-  <label>Email Address</label>
-  <input type="email" name="email"
-         placeholder="Enter your email" required>
+<label>Email Address</label>
+<input type="email" name="email" placeholder="Enter your email" required>
 
-  <label>Mobile Number</label>
-  <input type="tel" name="mobile"
-         placeholder="Enter your mobile number" required>
+<label>Mobile Number</label>
+<input type="tel" name="mobile" placeholder="Enter your mobile number" required>
 
-  <label>Position Applying For</label>
-  <select name="position" required>
-    <option value="">Select a Position</option>
-    <option>IT Recruiter</option>
-    <option>Senior IT Recruiter</option>
-    <option>HR Recruiter</option>
-    <option>Other</option>
-  </select>
+<label>Position Applying For</label>
+<select name="position" required>
+<option value="">Select a Position</option>
+<option>IT Recruiter</option>
+<option>Senior IT Recruiter</option>
+<option>HR Recruiter</option>
+<option>Other</option>
+</select>
 
-  <label>Total Experience</label>
-  <input type="text" name="experience"
-         placeholder="Example: 3 Years" required>
+<label>Total Experience</label>
+<input type="text" name="experience" placeholder="Example: 3 Years" required>
 
-  <label>LinkedIn Profile</label>
-  <input type="url" name="linkedin"
-         placeholder="LinkedIn profile URL">
+<label>LinkedIn Profile</label>
+<input type="url" name="linkedin" placeholder="LinkedIn profile URL">
 
-  <label>Upload Resume (PDF or Word)</label>
-  <input type="file" name="attachment"
-         accept=".pdf,.doc,.docx" required>
+<label>Upload Resume (PDF or Word)</label>
+<input type="file" name="attachment" accept=".pdf,.doc,.docx" required>
+<div class="form-note">Accepted formats: PDF, DOC and DOCX.</div>
 
-  <label>Message</label>
-  <textarea name="message" rows="4"
-            placeholder="Tell us about yourself"></textarea>
+<label>Message</label>
+<textarea name="message" rows="4" placeholder="Tell us about yourself"></textarea>
 
-  <button type="submit">Submit Application</button>
-
+<button type="submit">Submit Application →</button>
 </form>
+</div>
 
 </section>
 
+<section class="cta">
+<h2>Looking for Recruitment Partners?</h2>
+<p>If you are an independent recruiter or recruitment vendor interested in collaborating with us, explore our partner registration page.</p>
+<a class="btn" href="partners.html">Explore Partnership Opportunities →</a>
+</section>
+
+</main>
+
 <footer>
-<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+<div class="footer-grid">
+<div>
+<h3>TalentQuartile LLP</h3>
 <p>Recruitment | RPO | IT Services</p>
+<p>Connecting businesses with talent through focused recruitment and staffing solutions.</p>
+<p>Madhapur, Hyderabad, Telangana, India</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+</div>
+</div>
+<div>
+<h3>Get in Touch</h3>
+<div class="footer-links">
+<a href="partners.html">Clients &amp; Partners</a>
+<a href="contact.html">Contact Us</a>
+<a href="mailto:info@talentquartile.com">info@talentquartile.com</a>
+<a href="tel:+919491268021">+91 94912 68021</a>
+</div>
+</div>
+</div>
+<div class="copyright">© 2026 TalentQuartile LLP. All rights reserved.</div>
 </footer>
 
 </body>

@@ -4,95 +4,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Partners | TalentQuartile LLP</title>
+<title>Clients & Partners | TalentQuartile LLP</title>
+<meta name="description" content="Partner with TalentQuartile LLP for recruitment, RPO and staffing collaboration across India and the United States.">
 
 <style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10264a;line-height:1.7;background:#fff}
+a{text-decoration:none}
 
-body {
-    font-family: Arial, sans-serif;
-    color: #17365d;
-    line-height: 1.7;
+header{min-height:108px;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:15px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:relative;z-index:2}
+.logo{flex:0 0 400px}
+.logo img{width:400px;max-width:100%;height:auto;display:block}
+nav{flex:1;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:nowrap}
+nav a{color:#10264a;font-weight:700;font-size:16px;white-space:nowrap}
+nav a:hover{color:#0878f9}
+nav .partner{background:#0878f9;color:white;padding:13px 18px;border-radius:6px}
+
+.hero{background:#071d40;color:#fff;text-align:center;padding:80px 20px}
+.eyebrow{font-size:14px;letter-spacing:5px;font-weight:bold;color:#9dcaff;text-transform:uppercase}
+.hero h1{font-family:Georgia,serif;font-size:52px;line-height:1.15;margin:15px auto;max-width:950px}
+.hero p{font-size:19px;color:#e1eaf7;max-width:800px;margin:15px auto 0}
+
+main{max-width:1200px;margin:auto;padding:65px 25px}
+.intro{text-align:center;max-width:850px;margin:0 auto 50px}
+.intro h2{font-family:Georgia,serif;font-size:36px;line-height:1.25;color:#09234b}
+.intro p{font-size:17px;color:#52647c}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{padding:30px;border:1px solid #e2eaf4;border-radius:12px;background:#fff;box-shadow:0 8px 25px rgba(13,39,78,.06);border-top:4px solid #0878f9}
+.number{width:45px;height:45px;background:#eaf3ff;color:#0878f9;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:bold}
+.card h3{font-size:21px;color:#102b55;margin:18px 0 10px}
+.card p{color:#5d6d83;margin:0}
+
+.section-title{text-align:center;margin:65px 0 30px}
+.section-title h2{font-family:Georgia,serif;font-size:34px;color:#09234b;margin-bottom:8px}
+.section-title p{color:#62718a}
+
+.market{background:#f3f7fc;border-radius:14px;padding:40px;margin-top:60px}
+.market h2{font-family:Georgia,serif;font-size:32px;color:#09234b;margin-top:0}
+.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.market-item{background:white;border:1px solid #e0e9f4;border-radius:10px;padding:25px}
+.market-item h3{color:#0878f9;margin-top:0}
+
+.form-section{display:grid;grid-template-columns:.85fr 1.4fr;gap:35px;align-items:start;margin-top:70px}
+.form-info{background:#071d40;color:white;padding:35px;border-radius:14px}
+.form-info h2{font-family:Georgia,serif;font-size:32px;line-height:1.2;margin-top:0}
+.form-info p,.form-info li{color:#dce8f8}
+.form-info li{margin:12px 0}
+
+.form-card{border:1px solid #e2eaf4;border-radius:14px;padding:35px;box-shadow:0 8px 25px rgba(13,39,78,.07)}
+.form-card h2{font-family:Georgia,serif;font-size:30px;color:#09234b;margin:0 0 8px}
+.form-card>p{color:#62718a;margin-top:0;margin-bottom:25px}
+
+label{display:block;font-weight:bold;color:#18345d;margin:16px 0 6px}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid #cbd7e6;border-radius:6px;font:16px Arial,sans-serif;color:#10264a;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid #9dcaff;border-color:#0878f9}
+textarea{resize:vertical;min-height:110px}
+.form-note{font-size:13px;color:#62718a;margin-top:7px}
+button{width:100%;border:0;background:#0878f9;color:#fff;padding:16px 22px;border-radius:6px;font-size:17px;font-weight:bold;cursor:pointer;margin-top:22px}
+button:hover{background:#0665d4}
+
+.cta{text-align:center;background:#f3f7fc;padding:45px 25px;margin-top:65px;border-radius:14px}
+.cta h2{font-family:Georgia,serif;font-size:32px;color:#09234b;margin-top:0}
+.cta p{color:#52647c;max-width:700px;margin:0 auto 20px}
+.btn{display:inline-block;background:#0878f9;color:#fff;padding:14px 27px;border-radius:6px;font-weight:bold}
+
+footer{background:#071d40;color:#fff;padding:42px 6% 22px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px;max-width:1200px;margin:auto}
+footer h3{color:#fff}
+footer p,footer a{color:#d3e1f4}
+footer a:hover{color:#fff}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.copyright{text-align:center;border-top:1px solid #294266;margin-top:30px;padding-top:18px;color:#b9cbe2;font-size:14px}
+
+@media(max-width:1100px){
+header{flex-wrap:wrap;justify-content:center}
+.logo{flex:0 1 320px}
+.logo img{width:320px}
+nav{flex:1 1 100%;justify-content:center;flex-wrap:wrap}
 }
-
-header {
-    padding: 20px 7%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    background: white;
-}
-
-.logo { width: 370px; max-width: 100%; }
-
-nav a {
-    text-decoration: none;
-    color: #17365d;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-.hero {
-    background: linear-gradient(110deg, #103d70, #0879d8);
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
-}
-
-.hero h1 { font-size: 48px; }
-
-section { padding: 65px 8%; text-align: center; }
-
-.cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-    margin-top: 35px;
-}
-
-.card {
-    padding: 30px;
-    border: 1px solid #e2e8f0;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px #00000010;
-}
-
-.card h3 { color: #0879d8; margin-bottom: 12px; }
-
-.partner-form { background: #f3f7fc; }
-
-form { max-width: 650px; margin: 30px auto; text-align: left; }
-
-input, select, textarea {
-    width: 100%;
-    padding: 13px;
-    margin: 10px 0 18px;
-    border: 1px solid #ccd5e0;
-    border-radius: 5px;
-}
-
-button {
-    background: #0879d8;
-    color: white;
-    padding: 14px 30px;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background: #102f52;
-    color: white;
-    text-align: center;
-    padding: 25px;
-}
-
-@media(max-width:768px) {
-    header { justify-content: center; gap: 15px; }
-    nav { text-align: center; }
-    nav a { display: inline-block; margin: 6px; }
-    .hero h1 { font-size: 35px; }
+@media(max-width:700px){
+.hero{padding:60px 20px}
+.hero h1{font-size:36px}
+.intro h2,.section-title h2{font-size:29px}
+.grid,.market-grid,.form-section,.footer-grid{grid-template-columns:1fr}
+.market,.form-card,.form-info{padding:25px}
+nav{gap:13px}
+nav a{font-size:14px}
+nav .partner{padding:10px 14px}
 }
 </style>
 </head>
@@ -100,92 +99,178 @@ footer {
 <body>
 
 <header>
-<img src="Talent%20Quartile%20Logo.png" class="logo" alt="TalentQuartile Logo">
-
+<a class="logo" href="index.html">
+<img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
+</a>
 <nav>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="about.html">About Us</a>
 <a href="services.html">Services</a>
 <a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
+<a href="partners.html">Clients &amp; Partners</a>
 <a href="contact.html">Contact</a>
+<a class="partner" href="partners.html">Partner With Us ↗</a>
 </nav>
 </header>
 
-<div class="hero">
-<h1>Grow Together With TalentQuartile</h1>
-<p>Building Strong Business Partnerships Through Talent and Technology</p>
+<section class="hero">
+<div class="eyebrow">COLLABORATION · PARTNERSHIPS · GROWTH</div>
+<h1>Stronger Partnerships. Better Talent Outcomes.</h1>
+<p>We welcome organisations, recruitment vendors and independent recruiters interested in building professional partnerships with TalentQuartile LLP.</p>
+</section>
+
+<main>
+
+<section class="intro">
+<div class="eyebrow" style="color:#0878f9">WORK WITH US</div>
+<h2>Let's Build a Strong Recruitment Network</h2>
+<p>Our partnership approach brings together businesses and recruitment professionals to support hiring requirements across India and the United States.</p>
+</section>
+
+<section class="grid">
+<article class="card">
+<div class="number">01</div>
+<h3>Corporate Clients</h3>
+<p>Businesses looking for permanent recruitment, RPO and staffing support can connect with us to discuss their hiring requirements.</p>
+</article>
+
+<article class="card">
+<div class="number">02</div>
+<h3>Recruitment Vendors</h3>
+<p>Recruitment agencies and staffing vendors can express interest in collaborating on relevant hiring requirements.</p>
+</article>
+
+<article class="card">
+<div class="number">03</div>
+<h3>Independent Recruiters</h3>
+<p>Experienced independent recruiters can register their interest in joining our recruitment partner network.</p>
+</article>
+</section>
+
+<section class="market">
+<div class="eyebrow" style="color:#0878f9">OUR COLLABORATION MARKETS</div>
+<h2>Partnership Opportunities Across Markets</h2>
+<div class="market-grid">
+<div class="market-item">
+<h3>United States</h3>
+<p>Explore collaboration opportunities supporting US staffing and recruitment requirements, including technology and professional roles.</p>
 </div>
-
-<section>
-<h2>Partner With Us</h2>
-<p>TalentQuartile LLP welcomes organisations and professionals who want to build long-term business relationships and deliver exceptional results.</p>
-
-<div class="cards">
-
-<div class="card">
-<h3>Recruitment Partners</h3>
-<p>Collaborate with us to fulfil IT and non-IT recruitment requirements across industries.</p>
+<div class="market-item">
+<h3>India</h3>
+<p>Connect with us for Indian domestic recruitment, IT hiring, professional staffing and recruitment delivery requirements.</p>
 </div>
-
-<div class="card">
-<h3>RPO Partners</h3>
-<p>Work with our recruitment teams to deliver scalable and efficient talent acquisition solutions.</p>
-</div>
-
-<div class="card">
-<h3>Staffing Partners</h3>
-<p>Collaborate on staffing requirements and help businesses access qualified professionals.</p>
-</div>
-
-<div class="card">
-<h3>Technology Partners</h3>
-<p>Join us in delivering IT services and technology solutions to growing businesses.</p>
-</div>
-
 </div>
 </section>
 
-<section class="partner-form">
-<h2>Become Our Partner</h2>
-<p>Share your organisation details. Our team will get in touch.</p>
+<section class="form-section">
 
-<form>
+<div class="form-info">
+<div class="eyebrow">PARTNER WITH TALENTQUARTILE</div>
+<h2>Let's Start a Conversation</h2>
+<p>Tell us about your organisation and the type of partnership you are interested in. Our team will review your enquiry and get in touch.</p>
+<ul>
+<li>Recruitment Partner</li>
+<li>RPO Partner</li>
+<li>Staffing Partner</li>
+<li>Technology Recruitment Partner</li>
+<li>Corporate Hiring Enquiries</li>
+</ul>
+<p>Submitting this form is an expression of interest and does not automatically establish a partnership or guarantee work allocation.</p>
+</div>
+
+<div class="form-card">
+<h2>Partnership Enquiry Form</h2>
+<p>Share your organisation details and partnership interests below.</p>
+
+<form action="https://formsubmit.co/info@talentquartile.com" method="POST">
+
+<input type="hidden" name="_subject" value="New Partnership Enquiry - TalentQuartile">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_next" value="https://anilnaidu1425.github.io/talentquartile--Website/thank-you.html">
+<input type="text" name="_honey" style="display:none">
+
 <label>Company Name</label>
-<input type="text" placeholder="Enter company name" required>
+<input type="text" name="company_name" placeholder="Enter company name" required>
 
 <label>Contact Person</label>
-<input type="text" placeholder="Enter contact person name" required>
+<input type="text" name="contact_person" placeholder="Enter contact person name" required>
 
 <label>Business Email</label>
-<input type="email" placeholder="Enter business email" required>
+<input type="email" name="email" placeholder="Enter business email" required>
 
 <label>Mobile Number</label>
-<input type="tel" placeholder="Enter mobile number" required>
+<input type="tel" name="mobile" placeholder="Enter mobile number" required>
 
 <label>Partnership Type</label>
-<select required>
+<select name="partnership_type" required>
 <option value="">Select partnership type</option>
+<option>Corporate Client - Hiring Enquiry</option>
 <option>Recruitment Partner</option>
 <option>RPO Partner</option>
 <option>Staffing Partner</option>
-<option>Technology Partner</option>
+<option>Technology Recruitment Partner</option>
+<option>Independent Recruiter</option>
 <option>Other</option>
 </select>
 
 <label>Company Website</label>
-<input type="url" placeholder="https://">
+<input type="url" name="company_website" placeholder="https://">
+
+<label>Country / Primary Market</label>
+<select name="market" required>
+<option value="">Select your primary market</option>
+<option>India</option>
+<option>United States</option>
+<option>Other</option>
+</select>
 
 <label>Message</label>
-<textarea rows="4" placeholder="Tell us about your organisation"></textarea>
+<textarea name="message" rows="4" placeholder="Tell us about your organisation, recruitment capabilities and partnership interests" required></textarea>
 
-<button type="button" disabled>Registration Coming Soon</button>
+<button type="submit">Submit Partnership Enquiry →</button>
+<div class="form-note">Your enquiry will be sent to the TalentQuartile business team.</div>
+
 </form>
+</div>
+
 </section>
 
+<section class="cta">
+<h2>Looking to Hire Talent?</h2>
+<p>Let us understand your recruitment requirements and explore how TalentQuartile can support your organisation.</p>
+<a class="btn" href="contact.html">Contact Our Team →</a>
+</section>
+
+</main>
+
 <footer>
-<p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+<div class="footer-grid">
+<div>
+<h3>TalentQuartile LLP</h3>
 <p>Recruitment | RPO | IT Services</p>
+<p>Connecting businesses with talent through focused recruitment and staffing solutions.</p>
+<p>Madhapur, Hyderabad, Telangana, India</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+</div>
+</div>
+<div>
+<h3>Get in Touch</h3>
+<div class="footer-links">
+<a href="partners.html">Clients &amp; Partners</a>
+<a href="contact.html">Contact Us</a>
+<a href="mailto:info@talentquartile.com">info@talentquartile.com</a>
+<a href="tel:+919491268021">+91 94912 68021</a>
+</div>
+</div>
+</div>
+<div class="copyright">© 2026 TalentQuartile LLP. All rights reserved.</div>
 </footer>
 
 </body>

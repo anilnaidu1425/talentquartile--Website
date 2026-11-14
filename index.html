@@ -5,143 +5,207 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TalentQuartile LLP | Recruitment, RPO & IT Services</title>
-<meta name="description" content="TalentQuartile LLP provides recruitment, RPO and IT services in Hyderabad, India.">
+<meta name="description" content="TalentQuartile LLP delivers recruitment, RPO, staffing and IT talent solutions for Indian and global businesses.">
 <style>
+:root {
+  --navy:#061c40;
+  --blue:#0878f9;
+  --ink:#10264b;
+  --pale:#edf5ff;
+  --white:#fff;
+}
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;color:#172c49;line-height:1.6}
-header{background:#fff;padding:12px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:0 2px 12px #0001;position:sticky;top:0;z-index:10}
-.logo{width:300px;max-width:100%;height:auto}
-nav{display:flex;gap:22px;flex-wrap:wrap}
-nav a{text-decoration:none;color:#17365d;font-weight:600;font-size:14px}
-nav a:hover{color:#087de5}
-.hero{background:linear-gradient(120deg,#082f5e,#087de5);color:white;padding:100px 8%;text-align:center}
-.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.2;margin-bottom:20px}
-.hero p{font-size:19px;max-width:720px;margin:0 auto 30px;color:#e5efff}
-.btn{display:inline-block;background:white;color:#07549a;padding:13px 25px;border-radius:5px;text-decoration:none;font-weight:bold;margin:5px}
-.btn.blue{background:#087de5;color:white}
-section{padding:75px 8%;scroll-margin-top:85px}
-.heading{text-align:center;margin-bottom:35px}
-.heading h2{font-size:32px;color:#103c70}
-.heading p{color:#65758a;margin-top:8px}
-.about{max-width:850px;margin:auto;text-align:center;font-size:17px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px}
-.card{padding:28px;background:#f3f7fc;border-radius:9px;border-bottom:3px solid #087de5}
-.card h3{color:#07549a;margin-bottom:12px}
-.card p{color:#596b80}
-.light{background:#f3f7fc}
-.cta{background:#103b6c;color:white;text-align:center}
-.cta h2{font-size:30px;margin-bottom:15px}
-footer{background:#071f3d;color:white;padding:35px 8%;text-align:center}
-footer p{margin:8px}
-footer a{color:#9dccff;text-decoration:none}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+header{height:82px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 6.5%;position:sticky;top:0;z-index:20;box-shadow:0 3px 18px #071b3810}
+.logo img{width:300px;max-width:100%;height:auto;display:block}
+nav{display:flex;align-items:center;gap:28px}
+nav a{font-size:15px;font-weight:700;color:var(--ink);white-space:nowrap}
+nav a:hover{color:var(--blue)}
+nav .partner{background:var(--blue);color:white;padding:12px 20px;border-radius:4px}
+.hero{min-height:410px;display:grid;grid-template-columns:52% 48%;background:var(--navy);color:white;overflow:hidden}
+.hero-copy{padding:55px 8% 45px 13%;display:flex;flex-direction:column;justify-content:center}
+.eyebrow{font-size:12px;letter-spacing:4px;font-weight:700;color:#b9d8ff;margin-bottom:18px}
+.hero h1{font-family:Georgia,serif;font-size:clamp(38px,4vw,58px);line-height:1.04;font-weight:500;margin-bottom:20px}
+.hero p{font-size:17px;color:#e1ebfa;max-width:550px;margin-bottom:26px}
+.actions{display:flex;gap:15px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 25px;border-radius:4px;font-weight:700;border:1px solid white;color:white}
+.btn.primary{background:var(--blue);border-color:var(--blue)}
+.btn:hover{transform:translateY(-2px)}
+.hero-photo{position:relative;min-height:410px}
+.hero-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center}
+.hero-photo:before{content:"";position:absolute;z-index:1;left:-1px;top:0;height:100%;width:90px;background:var(--blue);clip-path:polygon(100% 0,100% 0,0 100%,0 100%)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);padding:20px 6%;border-bottom:1px solid #e4ebf4;background:white}
+.feature{text-align:center;font-weight:700;font-size:15px;padding:0 12px;border-right:1px solid #dbe4ef}
+.feature:last-child{border:0}
+.feature span{color:var(--blue);font-size:23px;margin-right:9px;vertical-align:middle}
+.services{padding:65px 5.2%;display:grid;grid-template-columns:1.45fr repeat(4,1fr);gap:18px;align-items:stretch}
+.section-intro{padding:10px 10px}
+.kicker{font-size:13px;letter-spacing:3px;font-weight:800;color:var(--blue);margin-bottom:14px}
+.section-intro h2{font-family:Georgia,serif;font-size:37px;line-height:1.12;color:var(--navy)}
+.underline{width:55px;height:4px;background:var(--blue);margin-top:22px}
+.service-card{background:linear-gradient(145deg,#f1f7ff,#e8f2ff);padding:24px 20px;border-radius:9px;min-height:195px;transition:.25s;border:1px solid #e5effc}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #092b5518}
+.service-icon{font-size:27px;color:var(--blue);margin-bottom:10px}
+.service-card h3{font-size:17px;line-height:1.25;color:var(--navy);margin-bottom:9px}
+.service-card p{font-size:14px;line-height:1.5}
+.service-card a{display:inline-block;font-size:25px;font-weight:bold;margin-top:10px;color:var(--navy)}
+.commitment{display:grid;grid-template-columns:52% 48%;align-items:center;background:#f8fbff}
+.commitment-photo{height:310px;overflow:hidden}
+.commitment-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+.commitment-copy{padding:40px 9%}
+.commitment-copy h2{font-family:Georgia,serif;font-size:42px;line-height:1.12;color:var(--navy);margin:10px 0 15px}
+.commitment-copy p{font-size:17px;max-width:550px}
+.cta{padding:65px 20px;text-align:center;background:var(--navy);color:white}
+.cta h2{font-family:Georgia,serif;font-size:36px;margin-bottom:10px}
+.cta p{color:#dce8fa;margin-bottom:23px}
+footer{background:#04142e;color:#d7e4f7;padding:42px 7% 20px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
+footer h3{color:white;margin-bottom:12px}
+footer a{display:block;font-size:14px;margin:7px 0;color:#d7e4f7}
+footer a:hover{color:#58a4ff}
+.footer-bottom{border-top:1px solid #ffffff25;margin-top:30px;padding-top:18px;font-size:13px;text-align:center}
+@media(max-width:1050px){
+ header{padding:12px 4%;height:auto;gap:15px;flex-wrap:wrap}
+ nav{gap:15px;flex-wrap:wrap}
+ .services{grid-template-columns:repeat(2,1fr)}
+ .section-intro{grid-column:1/-1}
+}
 @media(max-width:700px){
-header{justify-content:center;gap:12px}
-.logo{width:250px}
-nav{justify-content:center;gap:12px}
-nav a{font-size:13px}
-.hero{padding:70px 6%}
-section{padding:55px 6%}
+ .logo img{width:245px}
+ nav{gap:12px}
+ nav a{font-size:13px}
+ nav .partner{padding:9px 12px}
+ .hero{grid-template-columns:1fr}
+ .hero-copy{padding:45px 7%}
+ .hero-photo{min-height:270px}
+ .hero-photo:before{display:none}
+ .features{grid-template-columns:1fr 1fr;gap:15px}
+ .feature{border:0;text-align:left;font-size:13px}
+ .services{grid-template-columns:1fr;padding:45px 6%}
+ .section-intro{grid-column:auto}
+ .commitment{grid-template-columns:1fr}
+ .commitment-photo{height:260px}
+ .commitment-copy{padding:38px 7%}
+ .commitment-copy h2{font-size:34px}
+ .footer-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
 <body>
 
 <header>
-<a href="index.html">
-<img class="logo" src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP Logo">
-</a>
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="services.html">Services</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
-<a href="contact.html">Contact</a>
-</nav>
+  <a class="logo" href="index.html">
+    <img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="careers.html">Careers</a>
+    <a href="partners.html">Clients & Partners</a>
+    <a href="contact.html">Contact</a>
+    <a class="partner" href="partners.html">Partner With Us ↗</a>
+  </nav>
 </header>
 
 <main>
-<section class="hero" id="home">
-<h1>Connecting Talent.<br>Building Futures.</h1>
-<p>Your trusted partner for Recruitment, RPO and IT Services. We connect businesses with the right talent and technology solutions.</p>
-<a class="btn" href="#services">Explore Services</a>
-<a class="btn blue" href="#contact">Contact Us</a>
+<section class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">TALENT&nbsp; • &nbsp;TECHNOLOGY&nbsp; • &nbsp;GROWTH</div>
+    <h1>The Talent Partner for a Digital-First World</h1>
+    <p>We help global and Indian businesses build high-performing teams through Recruitment, RPO and Technology Services.</p>
+    <div class="actions">
+      <a class="btn primary" href="contact.html">Hire Talent&nbsp; →</a>
+      <a class="btn" href="services.html">Explore Our Services</a>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="Collaborative%20Team%20Meeting%20in%20a%20Modern%20Office.png" alt="Indian professionals collaborating in a modern office">
+  </div>
 </section>
 
-<section id="about">
-<div class="heading">
-<h2>About TalentQuartile</h2>
-<p>Recruitment | RPO | IT Services</p>
-</div>
-<div class="about">
-<p>TalentQuartile LLP is a recruitment and technology services company focused on helping businesses find the right talent and build stronger teams.</p>
-<p>We aim to deliver reliable, efficient and scalable workforce solutions through our recruitment expertise, RPO services and IT capabilities.</p>
-</div>
+<section class="features">
+  <div class="feature"><span>◎</span> Global & Indian Hiring</div>
+  <div class="feature"><span>♧</span> RPO Delivery Expertise</div>
+  <div class="feature"><span>⌘</span> IT & Technology Hiring</div>
+  <div class="feature"><span>▱</span> Scalable Talent Network</div>
 </section>
 
-<section class="light" id="services">
-<div class="heading">
-<h2>Our Services</h2>
-<p>Solutions designed to support your business growth</p>
-</div>
-<div class="cards">
-<div class="card">
-<h3>IT Recruitment</h3>
-<p>Connecting organizations with skilled IT professionals across technology roles.</p>
-</div>
-<div class="card">
-<h3>RPO Solutions</h3>
-<p>Recruitment process outsourcing to support your hiring requirements and talent acquisition goals.</p>
-</div>
-<div class="card">
-<h3>IT Services</h3>
-<p>Technology-focused services to support business and digital transformation needs.</p>
-</div>
-<div class="card">
-<h3>Staffing Solutions</h3>
-<p>Flexible talent solutions aligned with your workforce requirements.</p>
-</div>
-</div>
+<section class="services">
+  <div class="section-intro">
+    <div class="kicker">WHAT WE DO</div>
+    <h2>People. Capability. Business Impact.</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">♧</div>
+    <h3>Recruitment Services</h3>
+    <p>End-to-end hiring for IT, Product and Business roles.</p>
+    <a href="services.html">→</a>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">▱</div>
+    <h3>RPO Services</h3>
+    <p>Agile, scalable and cost-efficient recruitment delivery.</p>
+    <a href="services.html">→</a>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">⌘</div>
+    <h3>IT Services</h3>
+    <p>Technology talent, project staffing and IT support.</p>
+    <a href="services.html">→</a>
+  </div>
+  <div class="service-card">
+    <div class="service-icon">♧</div>
+    <h3>Staffing Solutions</h3>
+    <p>Contract, contract-to-hire and permanent staffing.</p>
+    <a href="services.html">→</a>
+  </div>
 </section>
 
-<section id="careers">
-<div class="heading">
-<h2>Build Your Career With Us</h2>
-<p>Explore opportunities and become part of our talent network.</p>
-</div>
-<div class="about">
-<p>We welcome talented professionals who are looking for exciting career opportunities.</p>
-<a class="btn blue" href="mailto:info@talentquartile.com?subject=Career%20Application">Send Your Resume</a>
-</div>
+<section class="commitment">
+  <div class="commitment-photo">
+    <img src="Collaborative%20Team%20Meeting%20in%20a%20Modern%20Office.png" alt="Indian corporate team working together">
+  </div>
+  <div class="commitment-copy">
+    <div class="kicker">OUR COMMITMENT</div>
+    <div class="underline"></div>
+    <h2>Right Talent. Real Results.</h2>
+    <p>A focused and relationship-driven partner, enabling organizations to build, scale and future-proof their teams.</p>
+  </div>
 </section>
 
-<section class="light" id="partners">
-<div class="heading">
-<h2>Clients & Partners</h2>
-<p>Building strong professional relationships through trust and collaboration.</p>
-</div>
-<div class="about">
-<p>We welcome organizations and recruitment partners interested in working with TalentQuartile LLP.</p>
-<a class="btn blue" href="mailto:info@talentquartile.com?subject=Partnership%20Enquiry">Become a Partner</a>
-</div>
-</section>
-
-<section class="cta" id="contact">
-<h2>Let's Work Together</h2>
-<p>Looking for recruitment, RPO or IT services?</p>
-<p>Get in touch with our team.</p>
-<br>
-<a class="btn" href="mailto:info@talentquartile.com">Email Us</a>
+<section class="cta">
+  <h2>Let's Build Your Next Great Team</h2>
+  <p>Connect with TalentQuartile for recruitment, RPO and IT talent solutions.</p>
+  <a class="btn primary" href="contact.html">Start a Conversation →</a>
 </section>
 </main>
 
 <footer>
-<h3>TalentQuartile LLP</h3>
-<p>Recruitment | RPO | IT Services</p>
-<p>Madhapur, Hyderabad, Telangana, India</p>
-<p>Email: <a href="mailto:info@talentquartile.com">info@talentquartile.com</a></p>
-<p>© 2026 TalentQuartile LLP. All rights reserved.</p>
+  <div class="footer-grid">
+    <div>
+      <h3>TalentQuartile LLP</h3>
+      <p>Recruitment | RPO | IT Services</p>
+      <p>Madhapur, Hyderabad, Telangana, India</p>
+    </div>
+    <div>
+      <h3>Explore</h3>
+      <a href="about.html">About Us</a>
+      <a href="services.html">Our Services</a>
+      <a href="careers.html">Careers</a>
+      <a href="partners.html">Clients & Partners</a>
+    </div>
+    <div>
+      <h3>Contact</h3>
+      <a href="mailto:info@talentquartile.com">info@talentquartile.com</a>
+      <a href="tel:+919491268021">+91 94912 68021</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 TalentQuartile LLP. All rights reserved.</div>
 </footer>
 
 </body>

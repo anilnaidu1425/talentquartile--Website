@@ -5,135 +5,248 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Services | TalentQuartile LLP</title>
+<meta name="description" content="Explore TalentQuartile recruitment, RPO, US staffing, Indian domestic recruitment and IT technology hiring services.">
 <style>
 *{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;color:#17304f;line-height:1.7}
-header{padding:15px 6%;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;box-shadow:0 2px 10px #ddd}
-.logo{width:280px;max-width:100%}
-nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{color:#123d70;text-decoration:none;font-weight:bold}
-.hero{background:linear-gradient(120deg,#082f5e,#087de5);color:white;text-align:center;padding:65px 20px}
-.hero h1{font-size:42px;margin:0}
-main{max-width:1150px;margin:auto;padding:50px 25px}
-.intro{text-align:center;font-size:18px;max-width:850px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:35px}
-.card{background:#f2f7fd;padding:25px;border-radius:9px;border-bottom:4px solid #087de5}
-.card h2{color:#0875cf;font-size:21px}
-.cta{text-align:center;background:#eaf4ff;padding:40px 20px;margin-top:45px;border-radius:10px}
-.btn{display:inline-block;background:#087de5;color:white;padding:13px 25px;border-radius:6px;text-decoration:none;font-weight:bold}
-footer{background:#071f3d;color:white;text-align:center;padding:30px}
-footer a{color:#9dccff}
-@media(max-width:650px){header{justify-content:center;gap:15px}nav{justify-content:center;gap:12px}.hero h1{font-size:32px}}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#10264a;line-height:1.7;background:#fff}
+a{text-decoration:none}
+header{min-height:108px;padding:12px 6%;display:flex;align-items:center;justify-content:space-between;gap:25px;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.08);position:relative;z-index:2}
+.logo img{width:400px;max-width:100%;height:auto;display:block}
+nav{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
+nav a{color:#10264a;font-weight:700;font-size:17px}
+nav a:hover{color:#0878f9}
+nav .partner{background:#0878f9;color:white;padding:17px 25px;border-radius:6px}
+.hero{background:#071d40;color:white;text-align:center;padding:85px 20px}
+.eyebrow{font-size:14px;letter-spacing:5px;font-weight:bold;color:#9dcaff;text-transform:uppercase}
+.hero h1{font-family:Georgia,serif;font-size:52px;line-height:1.15;margin:15px auto;max-width:900px}
+.hero p{font-size:19px;color:#e1eaf7;max-width:800px;margin:15px auto 0}
+main{max-width:1200px;margin:auto;padding:65px 25px}
+.intro{text-align:center;max-width:850px;margin:0 auto 48px}
+.intro h2{font-family:Georgia,serif;font-size:36px;line-height:1.25;color:#09234b}
+.intro p{font-size:17px;color:#52647c}
+.section-title{text-align:center;margin:65px 0 30px}
+.section-title h2{font-family:Georgia,serif;font-size:34px;color:#09234b;margin-bottom:8px}
+.section-title p{color:#62718a}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{padding:30px;border:1px solid #e2eaf4;border-radius:12px;background:#fff;box-shadow:0 8px 25px rgba(13,39,78,.06);border-top:4px solid #0878f9}
+.number{width:45px;height:45px;background:#eaf3ff;color:#0878f9;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:bold}
+.card h3{font-size:21px;color:#102b55;margin:18px 0 10px}
+.card p{color:#5d6d83;margin:0}
+.card ul{padding-left:20px;color:#52647c}
+.card li{margin:7px 0}
+.highlight{background:#f3f7fc;border-radius:16px;padding:45px;margin-top:65px}
+.highlight h2{font-family:Georgia,serif;font-size:32px;color:#09234b;margin-top:0}
+.markets{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:25px}
+.market{background:white;padding:28px;border-radius:12px;border:1px solid #e0e9f4}
+.market h3{color:#0878f9;margin-top:0}
+.process{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+.step{background:#f5f8fc;border-radius:10px;padding:22px;text-align:center}
+.step strong{display:block;color:#0878f9;font-size:22px;margin-bottom:8px}
+.cta{text-align:center;background:#071d40;color:white;padding:55px 25px;margin-top:70px;border-radius:14px}
+.cta h2{font-family:Georgia,serif;font-size:34px;margin:0 0 12px}
+.cta p{color:#dce8f8;max-width:700px;margin:0 auto 25px}
+.btn{display:inline-block;background:#0878f9;color:#fff;padding:14px 27px;border-radius:6px;font-weight:bold;margin:6px}
+.btn-outline{border:1px solid white;background:transparent}
+footer{background:#071d40;color:#fff;padding:42px 6% 22px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px;max-width:1200px;margin:auto}
+footer h3{color:#fff}
+footer p,footer a{color:#d3e1f4}
+footer a:hover{color:#fff}
+.footer-links{display:flex;flex-direction:column;gap:8px}
+.copyright{text-align:center;border-top:1px solid #294266;margin-top:30px;padding-top:18px;color:#b9cbe2;font-size:14px}
+@media(max-width:900px){
+header{flex-direction:column;padding:18px 4%}
+.logo img{width:320px}
+nav{justify-content:center;gap:15px}
+nav a{font-size:15px}
+.grid{grid-template-columns:repeat(2,1fr)}
+.process{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+.hero{padding:60px 20px}
+.hero h1{font-size:36px}
+.intro h2,.section-title h2{font-size:29px}
+.grid,.markets,.process,.footer-grid{grid-template-columns:1fr}
+.highlight{padding:25px}
+nav .partner{padding:11px 15px}
+}
 </style>
 </head>
 <body>
+
 <header>
-<a href="index.html"><img class="logo" src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP"></a>
+<a class="logo" href="index.html">
+<img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
+</a>
 <nav>
 <a href="index.html">Home</a>
-<a href="about.html">About</a>
+<a href="about.html">About Us</a>
 <a href="services.html">Services</a>
 <a href="careers.html">Careers</a>
-<a href="partners.html">Partners</a>
+<a href="partners.html">Clients &amp; Partners</a>
 <a href="contact.html">Contact</a>
+<a class="partner" href="partners.html">Partner With Us ↗</a>
 </nav>
 </header>
 
 <section class="hero">
-<h1>Our Services</h1>
-<p>Recruitment | RPO | IT Services</p>
+<div class="eyebrow">OUR SERVICES · TALENT · TECHNOLOGY · GROWTH</div>
+<h1>Recruitment Solutions That Move Businesses Forward</h1>
+<p>We help organisations identify, attract and hire the right talent through recruitment, RPO and technology staffing solutions.</p>
 </section>
 
 <main>
-<div class="intro">
-<h2>End-to-End Talent & Technology Solutions</h2>
-<p>At TalentQuartile LLP, we help businesses build strong teams and access reliable technology services. Our solutions are designed around client requirements, quality and timely delivery.</p>
+<section class="intro">
+<div class="eyebrow" style="color:#0878f9">WHAT WE DO</div>
+<h2>Connecting the Right Talent with the Right Opportunities</h2>
+<p>TalentQuartile LLP supports businesses with practical, flexible talent acquisition solutions. From individual hiring requirements to ongoing recruitment support, we focus on understanding your needs and delivering a structured hiring process.</p>
+</section>
+
+<div class="section-title">
+<h2>Our Core Services</h2>
+<p>Recruitment capabilities designed around your business requirements.</p>
 </div>
 
-<div class="grid">
-<div class="card">
-<h2>IT Recruitment</h2>
-<p>Specialized recruitment solutions for IT and technology roles across different experience levels and skill sets.</p>
+<section class="grid">
+<article class="card">
+<div class="number">01</div>
+<h3>Permanent Recruitment</h3>
+<p>End-to-end recruitment support to help businesses find qualified professionals for permanent positions.</p>
 <ul>
-<li>Software Development</li>
-<li>Cloud and DevOps</li>
-<li>Data Engineering and Analytics</li>
-<li>Cybersecurity</li>
-<li>ERP and SAP Recruitment</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Recruitment Process Outsourcing (RPO)</h2>
-<p>Flexible recruitment outsourcing solutions to support organizations with their hiring requirements.</p>
-<ul>
-<li>End-to-end recruitment</li>
-<li>Dedicated recruitment teams</li>
-<li>Bulk hiring support</li>
-<li>Talent sourcing and screening</li>
-<li>Recruitment coordination</li>
-</ul>
-</div>
-
-<div class="card">
-<h2>Permanent Staffing</h2>
-<p>Helping organizations identify and hire qualified professionals for permanent positions.</p>
-<ul>
-<li>Candidate sourcing</li>
-<li>Resume screening</li>
+<li>Requirement understanding</li>
+<li>Candidate sourcing and screening</li>
 <li>Interview coordination</li>
-<li>Candidate evaluation</li>
 <li>Offer and joining coordination</li>
 </ul>
-</div>
+</article>
 
-<div class="card">
-<h2>Contract Staffing</h2>
-<p>Workforce solutions for businesses requiring skilled professionals for project-based and contractual assignments.</p>
+<article class="card">
+<div class="number">02</div>
+<h3>Recruitment Process Outsourcing (RPO)</h3>
+<p>Flexible recruitment support that works as an extension of your internal talent acquisition team.</p>
 <ul>
-<li>Contract hiring</li>
-<li>Project-based staffing</li>
-<li>Temporary workforce solutions</li>
-<li>Technical resource deployment</li>
+<li>Full-cycle recruitment support</li>
+<li>Project-based hiring</li>
+<li>Modular recruitment services</li>
+<li>Recruiter-on-demand support</li>
 </ul>
-</div>
+</article>
 
-<div class="card">
-<h2>Non-IT Recruitment</h2>
-<p>Recruitment support for business and corporate functions across different industries.</p>
+<article class="card">
+<div class="number">03</div>
+<h3>US Staffing</h3>
+<p>Recruitment support for organisations hiring talent across the United States, aligned with role requirements and hiring expectations.</p>
 <ul>
-<li>HR and Administration</li>
-<li>Finance and Accounting</li>
-<li>Sales and Marketing</li>
-<li>Operations and Support</li>
+<li>US IT and professional staffing</li>
+<li>Candidate sourcing and screening</li>
+<li>Recruitment coordination</li>
+<li>Contract and permanent hiring support</li>
 </ul>
-</div>
+</article>
 
-<div class="card">
-<h2>IT Services</h2>
-<p>Technology services and resource support to help businesses meet their IT requirements.</p>
+<article class="card">
+<div class="number">04</div>
+<h3>Indian Domestic Recruitment</h3>
+<p>Talent acquisition support for companies hiring professionals across India.</p>
 <ul>
-<li>IT resource augmentation</li>
-<li>Software development support</li>
-<li>Technology consulting</li>
-<li>Technical project support</li>
+<li>Pan-India candidate sourcing</li>
+<li>IT and non-IT recruitment</li>
+<li>Mid-level and leadership hiring</li>
+<li>Interview and offer coordination</li>
 </ul>
-</div>
-</div>
+</article>
 
-<div class="cta">
-<h2>Looking for the Right Talent?</h2>
-<p>Let's discuss your recruitment and technology requirements.</p>
-<a class="btn" href="contact.html">Contact Our Team</a>
+<article class="card">
+<div class="number">05</div>
+<h3>IT &amp; Technology Hiring</h3>
+<p>Specialised recruitment for technology roles across a range of platforms, skills and experience levels.</p>
+<ul>
+<li>SAP and ERP professionals</li>
+<li>Software and application roles</li>
+<li>Cloud, infrastructure and networking</li>
+<li>Data, analytics and cybersecurity</li>
+</ul>
+</article>
+
+<article class="card">
+<div class="number">06</div>
+<h3>Recruitment Partner Network</h3>
+<p>Collaboration with independent recruiters and recruitment vendors to support hiring requirements.</p>
+<ul>
+<li>Recruiter registration</li>
+<li>Vendor partnerships</li>
+<li>Requirement sharing and coordination</li>
+<li>Collaborative talent sourcing</li>
+</ul>
+</article>
+</section>
+
+<section class="highlight">
+<div class="eyebrow" style="color:#0878f9">OUR MARKETS</div>
+<h2>Supporting Hiring Across Two Key Markets</h2>
+<p>Our recruitment services are structured to support organisations with hiring needs in both the United States and India.</p>
+<div class="markets">
+<div class="market">
+<h3>United States Staffing</h3>
+<p>Recruitment support for US-based hiring requirements, including IT and professional roles, with sourcing and coordination aligned to each engagement.</p>
 </div>
+<div class="market">
+<h3>Indian Domestic Recruitment</h3>
+<p>Hiring support for organisations across India, covering technology and other professional positions across experience levels.</p>
+</div>
+</div>
+</section>
+
+<section>
+<div class="section-title">
+<h2>Our Recruitment Approach</h2>
+<p>A structured process focused on clarity, communication and candidate fit.</p>
+</div>
+<div class="process">
+<div class="step"><strong>01</strong>Understand the hiring requirement</div>
+<div class="step"><strong>02</strong>Source and identify suitable talent</div>
+<div class="step"><strong>03</strong>Screen and coordinate interviews</div>
+<div class="step"><strong>04</strong>Support selection and onboarding coordination</div>
+</div>
+</section>
+
+<section class="cta">
+<h2>Let's Build Your Team</h2>
+<p>Tell us about your hiring needs. Our team will connect with you to understand the requirement and discuss suitable recruitment support.</p>
+<a class="btn" href="contact.html">Discuss Your Hiring Needs →</a>
+<a class="btn btn-outline" href="partners.html">Become a Recruitment Partner</a>
+</section>
 </main>
 
 <footer>
+<div class="footer-grid">
+<div>
 <h3>TalentQuartile LLP</h3>
 <p>Recruitment | RPO | IT Services</p>
+<p>Connecting businesses with talent through focused recruitment and staffing solutions.</p>
 <p>Madhapur, Hyderabad, Telangana, India</p>
-<p><a href="mailto:info@talentquartile.com">info@talentquartile.com</a></p>
-<p>© 2026 TalentQuartile LLP. All rights reserved.</p>
+</div>
+<div>
+<h3>Quick Links</h3>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Services</a>
+<a href="careers.html">Careers</a>
+</div>
+</div>
+<div>
+<h3>Get in Touch</h3>
+<div class="footer-links">
+<a href="partners.html">Clients &amp; Partners</a>
+<a href="contact.html">Contact Us</a>
+<a href="mailto:info@talentquartile.com">info@talentquartile.com</a>
+<a href="tel:+919491268021">+91 94912 68021</a>
+</div>
+</div>
+</div>
+<div class="copyright">© 2026 TalentQuartile LLP. All rights reserved.</div>
 </footer>
+
 </body>
 </html>

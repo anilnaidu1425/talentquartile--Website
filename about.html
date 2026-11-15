@@ -5,310 +5,374 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us | TalentQuartile LLP</title>
-<meta name="description" content="Discover TalentQuartile LLP, a recruitment, RPO and technology staffing partner serving US and Indian businesses.">
+<meta name="description" content="Discover TalentQuartile LLP, our purpose, vision and values in recruitment, RPO and IT staffing.">
+
 <style>
 :root {
-  --navy:#061c40;
-  --blue:#0878f9;
-  --ink:#10264b;
-  --pale:#edf5ff;
-  --muted:#60718b;
+  --navy: #061c40;
+  --blue: #0878f9;
+  --ink: #10264b;
+  --muted: #60718b;
+  --pale: #edf5ff;
+  --white: #ffffff;
 }
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.7}
-a{text-decoration:none;color:inherit}
-header{min-height:82px;background:#fff;display:flex;align-items:center;justify-content:space-between;padding:10px 6%;position:sticky;top:0;z-index:10;box-shadow:0 3px 18px #071b3810;gap:20px}
-.logo img{width:285px;max-width:100%;height:auto;display:block}
-nav{display:flex;align-items:center;gap:23px;flex-wrap:wrap}
-nav a{font-size:14px;font-weight:700;white-space:nowrap}
-nav a:hover,nav a.active{color:var(--blue)}
-nav .partner{background:var(--blue);color:white;padding:11px 17px;border-radius:4px}
-.hero{background:var(--navy);color:white;padding:72px 8%;position:relative;overflow:hidden}
-.hero:after{content:"";position:absolute;right:-80px;top:-150px;width:380px;height:600px;background:#0878f9;opacity:.22;transform:rotate(35deg)}
-.hero-content{max-width:850px;position:relative;z-index:1}
-.kicker{color:#8ec3ff;font-size:12px;font-weight:800;letter-spacing:3px;margin-bottom:16px}
-.hero h1{font-family:Georgia,serif;font-size:clamp(38px,5vw,58px);line-height:1.12;font-weight:500;margin-bottom:18px}
-.hero p{font-size:18px;color:#e0eafa;max-width:760px}
-.breadcrumb{font-size:13px;color:#b8c9e1;margin-top:25px}
-.breadcrumb a{color:white}
-.container{width:88%;max-width:1200px;margin:auto}
-.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:center;padding:75px 0}
-.label{color:var(--blue);font-weight:800;font-size:12px;letter-spacing:3px;margin-bottom:12px}
-h2{font-family:Georgia,serif;font-size:36px;line-height:1.2;color:var(--navy);margin-bottom:18px}
-.intro p,.section-lead{font-size:16px;color:#53647e;margin-bottom:15px}
-.intro-photo{height:370px;border-radius:8px;overflow:hidden}
-.intro-photo img{width:100%;height:100%;object-fit:cover}
-.highlight{color:var(--blue);font-weight:700}
-.mission-vision{background:#f1f7ff;padding:65px 0}
-.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px}
-.mv-card{background:white;padding:35px;border-radius:8px;border:1px solid #e0ebf8}
-.mv-icon{width:48px;height:48px;background:#e4f0ff;color:var(--blue);border-radius:8px;display:grid;place-items:center;font-size:23px;margin-bottom:18px}
-.mv-card h3{font-size:22px;color:var(--navy);margin-bottom:10px}
-.mv-card p{color:#586b84}
-.values{padding:75px 0}
-.center{text-align:center}
-.center .section-lead{max-width:700px;margin:0 auto 35px}
-.value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.value-card{padding:27px;background:white;border:1px solid #e4edf8;border-radius:8px;box-shadow:0 5px 20px #0b28500a}
-.value-card .symbol{font-size:25px;color:var(--blue);margin-bottom:10px}
-.value-card h3{font-size:18px;color:var(--navy);margin-bottom:8px}
-.value-card p{font-size:14px;color:#62718a}
-.markets{background:var(--navy);color:white;padding:70px 0}
-.markets h2{color:white}
-.markets .section-lead{color:#d3e0f3}
-.market-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:30px}
-.market-card{background:#102b54;border:1px solid #365477;padding:30px;border-radius:8px}
-.market-card h3{font-size:22px;margin-bottom:12px}
-.market-card p{color:#d5e3f5;margin-bottom:12px}
-.market-card ul{padding-left:20px;color:#e5efff}
-.market-card li{margin:5px 0}
-.approach{padding:75px 0}
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:35px}
-.step{padding:25px;background:#f2f7ff;border-radius:8px}
-.step-number{font-size:28px;color:var(--blue);font-weight:800;margin-bottom:12px}
-.step h3{font-size:17px;color:var(--navy);margin-bottom:8px}
-.step p{font-size:14px;color:#5b6c84}
-.commitment{background:#edf5ff;padding:60px 0;text-align:center}
-.commitment h2{max-width:750px;margin:0 auto 15px}
-.commitment p{max-width:760px;margin:0 auto 25px;color:#586b84}
-.btn{display:inline-block;background:var(--blue);color:white;padding:13px 25px;border-radius:4px;font-weight:700}
-.btn:hover{background:#0564d1}
-footer{background:#04142e;color:#d7e4f7;padding:42px 7% 20px}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:35px}
-footer h3{color:white;margin-bottom:12px}
-footer a{display:block;font-size:14px;margin:7px 0;color:#d7e4f7}
-footer a:hover{color:#58a4ff}
-.footer-bottom{border-top:1px solid #ffffff25;margin-top:30px;padding-top:18px;font-size:13px;text-align:center}
-@media(max-width:950px){
- header{flex-wrap:wrap}
- nav{gap:13px}
- .intro{gap:30px}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  color:var(--ink);
+  line-height:1.65;
+  background:#fff;
 }
-@media(max-width:700px){
- header{padding:14px 5%}
- .logo img{width:235px}
- nav{gap:12px}
- nav a{font-size:12px}
- .hero{padding:55px 7%}
- .container{width:90%}
- .intro{grid-template-columns:1fr;padding:50px 0}
- .intro-photo{height:270px}
- .mv-grid,.market-grid{grid-template-columns:1fr}
- .value-grid,.steps{grid-template-columns:1fr}
- h2{font-size:30px}
- .footer-grid{grid-template-columns:1fr}
+a { text-decoration:none; color:inherit; }
+
+header {
+  min-height:108px;
+  padding:12px 6%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,.07);
+  position:relative;
+  z-index:10;
+}
+.logo img { width:320px; max-width:100%; height:auto; display:block; }
+nav { display:flex; align-items:center; gap:24px; flex-wrap:wrap; }
+nav a { font-size:16px; font-weight:700; white-space:nowrap; }
+nav a:hover, nav a.active { color:var(--blue); }
+nav .partner {
+  background:var(--blue);
+  color:white;
+  padding:13px 19px;
+  border-radius:7px;
+}
+nav .partner:hover { color:white; background:var(--navy); }
+
+.container { max-width:1200px; margin:auto; padding:0 24px; }
+
+.hero {
+  background:var(--navy);
+  color:white;
+  padding:70px 0;
+}
+.hero-grid {
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  align-items:center;
+  gap:48px;
+}
+.eyebrow {
+  color:#80baff;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+.hero h1 {
+  font-family:Georgia,serif;
+  font-size:clamp(38px,4.2vw,58px);
+  line-height:1.12;
+  margin-bottom:22px;
+}
+.hero p { font-size:18px; color:#e4edfb; max-width:590px; }
+.hero img {
+  width:100%;
+  height:390px;
+  object-fit:cover;
+  border-radius:12px;
+}
+.button {
+  display:inline-block;
+  background:var(--blue);
+  color:white;
+  padding:14px 23px;
+  border-radius:6px;
+  font-weight:700;
+  margin-top:25px;
+}
+.button:hover { background:#0064d8; }
+
+section { padding:76px 0; }
+.section-heading { text-align:center; margin-bottom:38px; }
+.section-heading .eyebrow { color:var(--blue); margin-bottom:10px; }
+.section-heading h2 {
+  font-family:Georgia,serif;
+  font-size:clamp(30px,3vw,42px);
+  line-height:1.2;
+  color:var(--navy);
+}
+.section-heading p {
+  max-width:760px;
+  margin:15px auto 0;
+  color:var(--muted);
+  font-size:17px;
+}
+
+.intro-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.intro-grid h2 {
+  font-family:Georgia,serif;
+  color:var(--navy);
+  font-size:36px;
+  line-height:1.2;
+  margin-bottom:18px;
+}
+.intro-grid p { color:var(--muted); margin-bottom:14px; }
+.intro-note {
+  background:var(--pale);
+  border-left:4px solid var(--blue);
+  padding:25px;
+  border-radius:8px;
+}
+.intro-note h3 { color:var(--navy); margin-bottom:10px; }
+
+.purpose { background:#f5f8fd; }
+.cards {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+.card {
+  background:white;
+  border:1px solid #e2eaf5;
+  border-radius:10px;
+  padding:30px;
+  box-shadow:0 5px 18px rgba(10,35,75,.04);
+}
+.card .number {
+  display:inline-flex;
+  width:48px;
+  height:48px;
+  align-items:center;
+  justify-content:center;
+  border-radius:10px;
+  background:#eaf3ff;
+  color:var(--blue);
+  font-size:20px;
+  font-weight:800;
+  margin-bottom:18px;
+}
+.card h3 { color:var(--navy); font-size:21px; margin-bottom:10px; }
+.card p { color:var(--muted); font-size:15px; }
+
+.values {
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+.value {
+  border:1px solid #e2eaf5;
+  border-radius:9px;
+  padding:24px 18px;
+  text-align:center;
+}
+.value h3 { color:var(--navy); margin-bottom:8px; }
+.value p { color:var(--muted); font-size:14px; }
+
+.markets {
+  background:var(--navy);
+  color:white;
+}
+.markets .section-heading h2 { color:white; }
+.market-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+.market {
+  background:#102d58;
+  border:1px solid #29466f;
+  padding:30px;
+  border-radius:10px;
+}
+.market h3 { color:#80baff; font-size:22px; margin-bottom:12px; }
+.market p { color:#e2ebf8; }
+
+.cta {
+  text-align:center;
+  background:var(--pale);
+  padding:65px 24px;
+}
+.cta h2 {
+  font-family:Georgia,serif;
+  color:var(--navy);
+  font-size:36px;
+  margin-bottom:12px;
+}
+.cta p { color:var(--muted); }
+
+footer {
+  background:#04152f;
+  color:#dce7f7;
+  text-align:center;
+  padding:30px 20px;
+  font-size:14px;
+}
+footer p + p { margin-top:5px; }
+
+@media(max-width:950px) {
+  header { flex-direction:column; padding:18px 5%; }
+  nav { justify-content:center; gap:14px; }
+  .hero-grid, .intro-grid { grid-template-columns:1fr; }
+  .hero img { height:330px; }
+  .cards { grid-template-columns:1fr 1fr; }
+  .values { grid-template-columns:1fr 1fr; }
+}
+@media(max-width:600px) {
+  nav { gap:12px; }
+  nav a { font-size:13px; }
+  nav .partner { padding:10px 12px; }
+  .logo img { width:260px; }
+  .hero { padding:48px 0; }
+  .hero img { height:250px; }
+  section { padding:55px 0; }
+  .cards, .values, .market-grid { grid-template-columns:1fr; }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<a class="logo" href="index.html">
-<img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
-</a>
-<nav>
-<a href="index.html">Home</a>
-<a class="active" href="about.html">About Us</a>
-<a href="services.html">Services</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Clients & Partners</a>
-<a href="contact.html">Contact</a>
-<a class="partner" href="partners.html">Partner With Us ↗</a>
-</nav>
+  <a class="logo" href="index.html">
+    <img src="Talent%20Quartile%20Logo.png" alt="TalentQuartile LLP">
+  </a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a class="active" href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="careers.html">Careers</a>
+    <a href="partners.html">Clients &amp; Partners</a>
+    <a href="contact.html">Contact</a>
+    <a class="partner" href="partners.html">Partner With Us ↗</a>
+  </nav>
 </header>
 
 <main>
-<section class="hero">
-<div class="hero-content">
-<div class="kicker">ABOUT TALENTQUARTILE</div>
-<h1>Building Talent. Enabling Growth. Delivering Possibilities.</h1>
-<p>We are a recruitment, RPO and technology staffing partner helping businesses connect with the people and capabilities they need to move forward.</p>
-<div class="breadcrumb"><a href="index.html">Home</a> &nbsp; / &nbsp; About Us</div>
-</div>
-</section>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">About TalentQuartile</div>
+        <h1>Building Talent. Enabling Growth. Delivering Possibilities.</h1>
+        <p>We are a recruitment, RPO and technology staffing partner helping businesses connect with the people and capabilities they need to move forward.</p>
+        <a class="button" href="contact.html">Connect With Us →</a>
+      </div>
+      <div>
+        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85" alt="Professionals collaborating in a modern workplace">
+      </div>
+    </div>
+  </section>
 
-<div class="container">
-<section class="intro">
-<div>
-<div class="label">WHO WE ARE</div>
-<h2>Your Partner in Talent and Workforce Solutions</h2>
-<p>TalentQuartile LLP is a recruitment and workforce solutions company focused on helping organisations identify, attract and engage suitable professionals for their business requirements.</p>
-<p>We support clients across <span class="highlight">US staffing and Indian domestic recruitment</span>, with services spanning permanent recruitment, contract staffing support and Recruitment Process Outsourcing (RPO).</p>
-<p>Our approach starts with understanding each hiring requirement, the skills needed, the working environment and the client's expectations. We then align sourcing and screening activities to identify relevant candidates and support the recruitment process.</p>
-<p>We believe effective recruitment is more than matching resumes with job descriptions. It is about understanding people, business priorities and the value of the right talent.</p>
-</div>
-<div class="intro-photo">
-<img src="Collaborative%20Team%20Meeting%20in%20a%20Modern%20Office.png" alt="Indian professionals collaborating in a modern office">
-</div>
-</section>
-</div>
+  <section>
+    <div class="container intro-grid">
+      <div>
+        <div class="eyebrow" style="color:#0878f9">Who We Are</div>
+        <h2>A People-First Approach to Recruitment</h2>
+        <p>TalentQuartile LLP focuses on helping organisations identify and connect with talent through recruitment, Recruitment Process Outsourcing (RPO) and IT staffing services.</p>
+        <p>We work across Indian domestic recruitment and US staffing requirements, with an emphasis on understanding hiring needs, building professional relationships and supporting an organised recruitment process.</p>
+      </div>
+      <div class="intro-note">
+        <h3>Our Approach</h3>
+        <p>Every hiring requirement is different. We aim to understand the role, the organisation and the skills required before supporting the recruitment process.</p>
+        <p>Our focus is on clear communication, relevant talent sourcing and collaborative delivery.</p>
+      </div>
+    </div>
+  </section>
 
-<section class="mission-vision">
-<div class="container">
-<div class="mv-grid">
-<div class="mv-card">
-<div class="mv-icon">◎</div>
-<h3>Our Vision</h3>
-<p>To become a trusted talent and workforce solutions partner, recognised for connecting organisations with the professionals and capabilities they need to grow, adapt and succeed.</p>
-</div>
-<div class="mv-card">
-<div class="mv-icon">◇</div>
-<h3>Our Mission</h3>
-<p>To simplify talent acquisition through structured recruitment practices, responsive communication, collaborative partnerships and a consistent focus on candidate and client requirements.</p>
-</div>
-</div>
-</div>
-</section>
+  <section class="purpose">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">What Guides Us</div>
+        <h2>Our Purpose, Vision &amp; Mission</h2>
+        <p>The principles that shape how we work with clients, candidates and recruitment partners.</p>
+      </div>
+      <div class="cards">
+        <div class="card">
+          <div class="number">01</div>
+          <h3>Our Purpose</h3>
+          <p>To help businesses find the right people and help professionals discover meaningful career opportunities.</p>
+        </div>
+        <div class="card">
+          <div class="number">02</div>
+          <h3>Our Vision</h3>
+          <p>To build trusted recruitment partnerships that connect talent and opportunity across markets.</p>
+        </div>
+        <div class="card">
+          <div class="number">03</div>
+          <h3>Our Mission</h3>
+          <p>To deliver thoughtful, responsive and professional recruitment support aligned with each hiring requirement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="values">
-<div class="container">
-<div class="center">
-<div class="label">WHAT GUIDES US</div>
-<h2>Our Core Values</h2>
-<p class="section-lead">The principles that shape how we approach our work, interact with people and build professional relationships.</p>
-</div>
-<div class="value-grid">
-<div class="value-card">
-<div class="symbol">✧</div>
-<h3>Integrity</h3>
-<p>We value honesty, transparency and responsible communication in every professional interaction.</p>
-</div>
-<div class="value-card">
-<div class="symbol">◎</div>
-<h3>Quality</h3>
-<p>We focus on relevant candidate profiles, role alignment and attention to the client's hiring expectations.</p>
-</div>
-<div class="value-card">
-<div class="symbol">↗</div>
-<h3>Commitment</h3>
-<p>We believe in taking ownership of agreed responsibilities and maintaining clear communication.</p>
-</div>
-<div class="value-card">
-<div class="symbol">◇</div>
-<h3>Collaboration</h3>
-<p>We work towards productive relationships with clients, candidates, recruiters and business partners.</p>
-</div>
-<div class="value-card">
-<div class="symbol">⌁</div>
-<h3>Agility</h3>
-<p>We adapt our sourcing and recruitment approach to different roles, industries and hiring needs.</p>
-</div>
-<div class="value-card">
-<div class="symbol">↑</div>
-<h3>Continuous Improvement</h3>
-<p>We aim to improve our recruitment processes through feedback, learning and disciplined execution.</p>
-</div>
-</div>
-</div>
-</section>
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Our Foundation</div>
+        <h2>Values That Shape Our Work</h2>
+        <p>We believe strong professional relationships begin with the right values.</p>
+      </div>
+      <div class="values">
+        <div class="value">
+          <h3>Integrity</h3>
+          <p>Being transparent, responsible and professional in every interaction.</p>
+        </div>
+        <div class="value">
+          <h3>Collaboration</h3>
+          <p>Working closely with clients, candidates and recruitment partners.</p>
+        </div>
+        <div class="value">
+          <h3>Quality</h3>
+          <p>Focusing on relevant talent and the requirements behind every role.</p>
+        </div>
+        <div class="value">
+          <h3>Continuous Improvement</h3>
+          <p>Learning, adapting and improving our recruitment processes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="markets">
-<div class="container">
-<div class="label">OUR MARKET FOCUS</div>
-<h2>Connecting Talent Across Markets</h2>
-<p class="section-lead">Our recruitment focus covers two important hiring markets, with delivery approaches aligned to the requirements of each engagement.</p>
-<div class="market-grid">
-<div class="market-card">
-<h3>US Staffing</h3>
-<p>Recruitment support for US staffing requirements and technology hiring engagements.</p>
-<ul>
-<li>IT contract staffing support</li>
-<li>Contract-to-hire recruitment</li>
-<li>Permanent placement</li>
-<li>Technology talent sourcing</li>
-<li>Candidate screening and coordination</li>
-</ul>
-</div>
-<div class="market-card">
-<h3>Indian Domestic Recruitment</h3>
-<p>Talent acquisition support for businesses hiring professionals across India.</p>
-<ul>
-<li>IT and technology recruitment</li>
-<li>Corporate and business roles</li>
-<li>Permanent recruitment</li>
-<li>Contract staffing support</li>
-<li>Project-based hiring requirements</li>
-</ul>
-</div>
-</div>
-</div>
-</section>
+  <section class="markets">
+    <div class="container">
+      <div class="section-heading">
+        <div class="eyebrow">Where We Focus</div>
+        <h2>Supporting Hiring Across Markets</h2>
+        <p>Our recruitment focus covers both Indian and US hiring requirements.</p>
+      </div>
+      <div class="market-grid">
+        <div class="market">
+          <h3>United States</h3>
+          <p>Supporting US staffing and recruitment requirements across technology and professional roles.</p>
+        </div>
+        <div class="market">
+          <h3>India</h3>
+          <p>Supporting Indian domestic recruitment, IT hiring and professional staffing requirements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section class="approach">
-<div class="container">
-<div class="center">
-<div class="label">HOW WE WORK</div>
-<h2>A Structured Approach to Recruitment</h2>
-<p class="section-lead">We follow a requirement-led process designed to support communication, candidate relevance and recruitment coordination.</p>
-</div>
-<div class="steps">
-<div class="step">
-<div class="step-number">01</div>
-<h3>Understand</h3>
-<p>We discuss the role, responsibilities, required skills, experience, location and hiring expectations.</p>
-</div>
-<div class="step">
-<div class="step-number">02</div>
-<h3>Source</h3>
-<p>We identify potential candidates through relevant sourcing channels and professional networks.</p>
-</div>
-<div class="step">
-<div class="step-number">03</div>
-<h3>Screen</h3>
-<p>We review candidate profiles against the agreed role requirements and suitability criteria.</p>
-</div>
-<div class="step">
-<div class="step-number">04</div>
-<h3>Coordinate</h3>
-<p>We facilitate candidate submissions, interview scheduling and recruitment communication.</p>
-</div>
-<div class="step">
-<div class="step-number">05</div>
-<h3>Follow Through</h3>
-<p>We support selection, offer coordination and pre-joining communication as agreed.</p>
-</div>
-<div class="step">
-<div class="step-number">06</div>
-<h3>Build Relationships</h3>
-<p>We value feedback and ongoing collaboration to support future recruitment requirements.</p>
-</div>
-</div>
-</div>
-</section>
-
-<section class="commitment">
-<div class="container">
-<div class="label">OUR COMMITMENT</div>
-<h2>Right Talent. Meaningful Connections. Better Possibilities.</h2>
-<p>We are committed to building professional relationships through recruitment discipline, transparent communication and a clear understanding of business and talent requirements.</p>
-<a class="btn" href="contact.html">Connect With Our Team →</a>
-</div>
-</section>
+  <section class="cta">
+    <div class="container">
+      <h2>Let's Build the Right Connections</h2>
+      <p>Looking for recruitment support or interested in working with us?</p>
+      <a class="button" href="contact.html">Start a Conversation →</a>
+    </div>
+  </section>
 </main>
 
 <footer>
-<div class="footer-grid">
-<div>
-<h3>TalentQuartile LLP</h3>
-<p>Recruitment | RPO | IT Services</p>
-<p>Madhapur, Hyderabad, Telangana, India</p>
-</div>
-<div>
-<h3>Explore</h3>
-<a href="index.html">Home</a>
-<a href="services.html">Services</a>
-<a href="careers.html">Careers</a>
-<a href="partners.html">Clients & Partners</a>
-</div>
-<div>
-<h3>Contact</h3>
-<a href="mailto:info@talentquartile.com">info@talentquartile.com</a>
-<a href="tel:+919491268021">+91 94912 68021</a>
-<a href="contact.html">Contact Us</a>
-</div>
-</div>
-<div class="footer-bottom">© 2026 TalentQuartile LLP. All rights reserved.</div>
+  <p>© 2026 TalentQuartile LLP. All Rights Reserved.</p>
+  <p>Recruitment | RPO | IT Services · Madhapur, Hyderabad, India</p>
 </footer>
 
 </body>

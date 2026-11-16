@@ -92,11 +92,13 @@ nav .partner{padding:10px 14px}
     padding: 0 25px !important;
 }
 
+
 .hero + div img {
     width: 100%;
-    height: 320px !important;
-    object-fit: cover;
-    object-position: center 42%;
+    height: auto !important;
+    max-height: 520px;
+    object-fit: contain;
+    object-position: center;
     border-radius: 14px;
     display: block;
 }
@@ -160,10 +162,15 @@ main {
         padding: 0 16px !important;
     }
 
-    .hero + div img {
-        height: 220px !important;
-        object-position: center center;
-    }
+   
+.hero + div img {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 400px;
+    object-fit: contain;
+    object-position: center;
+}
+
 
     main {
         padding: 35px 16px 45px;

@@ -83,6 +83,113 @@ nav{gap:13px}
 nav a{font-size:14px}
 nav .partner{padding:10px 14px}
 }
+  
+/* CAREERS PAGE - LAYOUT ALIGNMENT IMPROVEMENTS */
+
+.hero + div {
+    max-width: 1200px !important;
+    margin: 28px auto 0 !important;
+    padding: 0 25px !important;
+}
+
+.hero + div img {
+    width: 100%;
+    height: 320px !important;
+    object-fit: cover;
+    object-position: center 42%;
+    border-radius: 14px;
+    display: block;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 42px 25px 65px;
+}
+
+.intro {
+    max-width: 850px;
+    margin: 0 auto 38px;
+}
+
+.benefits {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin: 30px 0 55px;
+    align-items: stretch;
+}
+
+.benefit {
+    height: 100%;
+    padding: 28px;
+}
+
+.application {
+    grid-template-columns: 0.9fr 1.4fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.form-info,
+.form-card {
+    height: 100%;
+    padding: 32px;
+}
+
+.form-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-card {
+    min-width: 0;
+}
+
+.cta {
+    margin-top: 55px;
+    padding: 42px 25px;
+}
+
+.footer-grid {
+    align-items: start;
+}
+
+@media (max-width: 700px) {
+    .hero + div {
+        margin-top: 20px !important;
+        padding: 0 16px !important;
+    }
+
+    .hero + div img {
+        height: 220px !important;
+        object-position: center center;
+    }
+
+    main {
+        padding: 35px 16px 45px;
+    }
+
+    .benefits,
+    .application,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit {
+        padding: 22px;
+    }
+
+    .form-info,
+    .form-card {
+        height: auto;
+        padding: 24px;
+    }
+
+    .cta {
+        margin-top: 35px;
+    }
+}
+
 </style>
 </head>
 
